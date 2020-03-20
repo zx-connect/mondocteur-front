@@ -1,6 +1,6 @@
 <!--Main layout-->
 <main class="mt-5 pt-5">
-  <div class="container-fluid">
+  <div class="container">
       <h3 class="h3 text-center mb-5">Map</h3>
     <!--Section: Cards-->
     <section class="text-center">
@@ -9,17 +9,20 @@
       <div class="row wow fadeIn">
 
         <!--Grid column-->
-        <div class="col-md-12 mb-4">
-              <!--Google map-->
-              <div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
-                <iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                  style="border:0" allowfullscreen></iframe>
-              </div>
+        <div class="col-md-12 mb-4" style="height: 600px;">
+              <!--Map-->
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, laudantium inventore modi ab natus ea soluta nihil aspernatur assumenda commodi itaque temporibus dolorem provident voluptatum molestias repellendus neque optio repudiandae?
+              <mgl-map
+                [style]="'mapbox://styles/mapbox/streets-v11'"
+                [zoom]="[9]"
+                [center]="[-74.50, 40]"
+              >
+              </mgl-map>
 
-              <!--Google Maps-->
+              <!--Maps-->
         </div>
         <!--Grid column-->
-
+<br>
       </div>
       <!--Grid row-->
 
