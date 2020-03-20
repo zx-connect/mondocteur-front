@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MapComponent } from './map/map.component';
 import { VulgarisationComponent } from './vulgarisation/vulgarisation.component';
+import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,10 @@ import { VulgarisationComponent } from './vulgarisation/vulgarisation.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxMapboxGLModule.withConfig({
+      accessToken: 'pk.eyJ1IjoiZXJpYy1hbXBpcmUiLCJhIjoiY2p1eW16bWpoMDA3ZzQ1bzB0ZnFzamYzcSJ9.j6QywD1WVdqhIeir_2kPRg'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
