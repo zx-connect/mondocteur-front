@@ -4,6 +4,14 @@
 
 export const environment = {
   production: false
+  firebase: {
+    apiKey: "AIzaSyBzH6IHUDQivrLGxCDO27biVl6v0kHHIIs",
+    authDomain: "YOUR_AUTH_DOMAIN",
+    databaseURL: "https://my-doctor-backend.firebaseio.com",
+    projectId: "my-doctor-backend",
+    storageBucket: "my-doctor-backend.appspot.com",
+    messagingSenderId: "YOUR_SENDER_ID"
+  }
 };
 
 /*
