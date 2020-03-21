@@ -3,7 +3,7 @@
   <div class="container">
 
     <!-- Brand -->
-    <a class="navbar-brand" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
+    <a class="navbar-brand" [routerLink]="''">
       <strong>Mon Docteur</strong>
     </a>
 
@@ -19,12 +19,12 @@
       <!-- Left -->
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Accueil
+          <a class="nav-link" [routerLink]="'/vulgarisation'">Accueil
             <span class="sr-only">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/" target="_blank">Map</a>
+          <a class="nav-link" [routerLink]="'/map'" >Map</a>
         </li>
       </ul>
 
