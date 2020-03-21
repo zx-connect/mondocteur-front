@@ -1,7 +1,7 @@
 <!--Main layout-->
 <main class="mt-5 pt-5">
   <div class="container">
-      <h3 class="h3 text-center mb-5">Map</h3>
+    <h3 class="h3 text-center mb-5">Map</h3>
     <!--Section: Cards-->
     <section class="text-center">
 
@@ -10,19 +10,36 @@
 
         <!--Grid column-->
         <div class="col-md-12 mb-4" style="height: 600px;">
-              <!--Map-->
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, laudantium inventore modi ab natus ea soluta nihil aspernatur assumenda commodi itaque temporibus dolorem provident voluptatum molestias repellendus neque optio repudiandae?
-              <mgl-map
-                [style]="'mapbox://styles/mapbox/streets-v11'"
-                [zoom]="[9]"
-                [center]="[-74.50, 40]"
-              >
-              </mgl-map>
+          <!--Map-->
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, laudantium inventore modi ab natus ea soluta
+          nihil aspernatur assumenda commodi itaque temporibus dolorem provident voluptatum molestias repellendus neque
+          optio repudiandae?
+          <mgl-map
+            [style]="'mapbox://styles/mapbox/streets-v11'"
+            [zoom]="[5]"
+            [center]="[21.7587, -4.0383]"
+          >
+            <mgl-marker
+              [lngLat]="[15.31357, -4.32758]"
+              #myMarker
+            >
+              <img src="/assets/img/mapbox-icon.png" width="50px" class="marker" alt="Marker"/>
+            </mgl-marker>
+            <mgl-popup
+              [marker]="myMarker"
+            >
+              <ul>
+                <li>Pays : {{drcDatas.Country}}</li>
+                <li>Cas confirmé : {{drcDatas.Cases}}</li>
+              </ul>
+              <small>source: John Hopkins University. API from <a href="http://ksred.me" target="_blank">@ksred</a></small>
+            </mgl-popup>
+          </mgl-map>
 
-              <!--Maps-->
+          <!--Maps-->
         </div>
         <!--Grid column-->
-<br>
+        <br>
       </div>
       <!--Grid row-->
 

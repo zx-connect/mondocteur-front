@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MapComponent } from './map/map.component';
 import { VulgarisationComponent } from './vulgarisation/vulgarisation.component';
 import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     NgxMapboxGLModule.withConfig({
       accessToken: 'pk.eyJ1IjoiZXJpYy1hbXBpcmUiLCJhIjoiY2p1eW16bWpoMDA3ZzQ1bzB0ZnFzamYzcSJ9.j6QywD1WVdqhIeir_2kPRg'
     })
