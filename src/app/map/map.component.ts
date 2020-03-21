@@ -18,7 +18,6 @@ export class MapComponent implements OnInit {
     this.mapService.get('https://api.covid19api.com/country/congo-(kinshasa)/status/confirmed')
       .subscribe((data: [MapData]) => {
         this.drcDatas = data.pop();
-        console.log(data.pop());
       })
     ;
   }

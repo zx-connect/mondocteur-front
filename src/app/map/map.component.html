@@ -20,7 +20,7 @@
             [center]="[21.7587, -4.0383]"
           >
             <mgl-marker
-              [lngLat]="[15.31357, -4.32758]"
+              [lngLat]="[	15.807045, -4.222447]"
               #myMarker
             >
               <img src="/assets/img/mapbox-icon.png" width="50px" class="marker" alt="Marker"/>
@@ -28,11 +28,11 @@
             <mgl-popup
               [marker]="myMarker"
             >
-              <ul>
-                <li>Pays : {{drcDatas.Country}}</li>
-                <li>Cas confirmé : {{drcDatas.Cases}}</li>
-              </ul>
-              <small>source: John Hopkins University. API from <a href="http://ksred.me" target="_blank">@ksred</a></small>
+              <div>
+                <div>Pays : {{drcDatas.Country}}</div>
+                <div>Cas confirmé : {{drcDatas.Cases}}</div>
+                <small>source: John Hopkins University. API from <a href="http://ksred.me" target="_blank">@ksred</a></small>
+              </div>
             </mgl-popup>
           </mgl-map>
 
